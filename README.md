@@ -12,7 +12,7 @@ The first version uses shared memory and multiple TA processes but does not use 
 ### Part 2b
 The second version adds semaphores to protect the three critical areas of the program: modifying the rubric, selecting questions, and loading the next exam. This version prevents the races seen in Part 2a and ensures that the system runs without deadlock or livelock.
 
-Both versions were tested using different numbers of TA processes. In every run, the program successfully reached the sentinel student (9999) and terminated normally.
+Both versions were tested using different numbers of TA processes. In every run, the program successfully reached the last student (9999) and terminated normally.
 
 ## Report
 The written report includes:
